@@ -1,15 +1,10 @@
 <?php 
 
-function multiplica(int $a, int $b): int 
-{
-    return $a * $b;
-}
-
 function saudacao()
 {
     date_default_timezone_set('America/Sao_Paulo');
     $hora = date("H");
-    $horas = date("h:i:s");
+    $horas = date("H:i:s");
 
     if($hora >= 0 && $hora <=5){
         echo "São: $horas, Boa Madrugada!";
